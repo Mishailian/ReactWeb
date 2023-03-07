@@ -1,0 +1,45 @@
+.Messedge{
+    background-color: rgb(255,255,255);
+    margin: 10px;
+    display: flex;
+    border-radius: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+
+.avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 90px;
+    background-color: rgb(218,218,219) ;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.UserText{
+    /* border-bottom: 3px rgb(140,140,140) solid; */
+    display: flex;     /* Create the flex container */
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0%;
+    padding: 0%;
+    
+    
+}
+.UserText p {
+    padding: 0%;
+    margin: 0%;
+}
+
+.UserName{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.UserStatus{
+    color: #703efe;
+    font-size: 10px;
+}

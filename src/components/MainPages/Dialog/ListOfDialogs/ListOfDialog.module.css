@@ -1,0 +1,5 @@
+.ListOfDialog{
+    background-color:#fafafa;
+    grid-area: listDialogs;
+    border-right: 0.2mm rgb(140,140,140) solid;
+}
