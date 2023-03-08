@@ -1,0 +1,9 @@
+.MainPage{
+    margin: 15px;
+    margin-top: 0%;
+    height: 800px;
+    border-radius: 30px;
+    grid-area: mainpage;
+    overflow: hidden;
+    background-color: #fafafa;
+  }
