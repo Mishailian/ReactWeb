@@ -3,5 +3,13 @@
     /* font-size: large; */
     background-color: #fafafa;
     grid-area: mainDialog;
+    display: grid;
+    grid-template-areas: 
+    'dialog'
+    'sendMesseg';
+    grid-template-rows: 15fr 1fr;
 }
-/* background-color: rgb(112,62,254); */
+
+.dialog{
+    grid-area: dialog;
+}

@@ -1,0 +1,18 @@
+.SendMesseg{
+    background-color: aqua;
+    grid-area: sendMesseg;
+    display: grid;
+    grid-template-areas: 
+    'input button';
+    grid-template-columns: 15fr 1fr;
+    
+}
+
+.Input{
+    grid-area: input;
+}
+
+.SendButton{
+    grid-area: button;
+    background-color: grey;
+}

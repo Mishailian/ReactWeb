@@ -1,9 +1,9 @@
 import React from "react";
-import classes from './Messedge.module.css';
+import classes from './DialogOfUser.module.css';
 
-function Messedge(props){
+function DialogOfUser(props){
     return(
-        <div className={classes.Messedge}>    
+        <div className={classes.DialogOfUser}>    
             <div className={classes.avatar}>
                 <img alt="" src=""/>
             </div>
@@ -15,4 +15,4 @@ function Messedge(props){
     );
 }
 
-export default Messedge;
+export default DialogOfUser;
