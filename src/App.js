@@ -6,14 +6,14 @@ import News from './components/MainPages/News/News';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-function App() {
+let App = (props) => {
   return (
       <BrowserRouter>
         <div className='main'>
         <Header/>
         <SideBar/>
         <Routes>
-              <Route path='/' element={<Dialog />}/>
+              <Route path='/' element={<Dialog state={props.state} addUserDialog={props.addUserDialog} />}/>
               <Route path='/news' element={<News />} />
           </Routes>
         </div>

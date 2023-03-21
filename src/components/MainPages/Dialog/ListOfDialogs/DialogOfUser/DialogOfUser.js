@@ -1,7 +1,6 @@
 import React from "react";
 import classes from './DialogOfUser.module.css';
-
-function DialogOfUser(props){
+let DialogOfUser = (props) => {
     return(
         <div className={classes.DialogOfUser}>    
             <div className={classes.avatar}>
