@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state, {addUserDialog} from './redux/state';
+import {addUserDialog} from './redux/state';
 
 export const renderEntireTree = (state) => { ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,11 +16,3 @@ export const renderEntireTree = (state) => { ReactDOM.createRoot(document.getEle
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 }
-
-renderEntireTree(state);
-=======
-import {renderEntireTree} from './render';
-import state from './redux/state';
-
-renderEntireTree(state);
->>>>>>> ca7ab3a2296723a2aa2a22f7bfeb0cd6724a4029
