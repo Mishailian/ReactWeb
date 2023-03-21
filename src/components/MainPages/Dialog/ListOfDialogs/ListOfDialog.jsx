@@ -6,16 +6,9 @@ import DialogOfUser from "./DialogOfUser/DialogOfUser";
 
 
 
-function ListOfDialog(){
-
-    let dialog_users = [
-        {'id':1, 'user_name': 'Misha'},
-        {'id':2, 'user_name': 'Misha'},
-        {'id':3, 'user_name': 'Misha'},
-        {'id':4, 'user_name': 'Misha'},
-        ]
+let ListOfDialog = (props) => {
     
-    let dialog_elements = dialog_users
+    let dialog_elements = props.state.Dialog.ListOfDialogs
     .map(user => <DialogOfUser UserName={user.user_name}/>);
 
     return(

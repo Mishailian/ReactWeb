@@ -4,11 +4,11 @@ import '../MainPage.css'
 import ListOfDialog from "./ListOfDialogs/ListOfDialog";
 import MainDialog from "./MainDialog/MainDialog";
 
-function Dialog(){
+let Dialog = (props) => {
     return(
         <div className={`${classes.Dialog} MainPage`} >
-            <ListOfDialog/>
-            <MainDialog/>
+            <ListOfDialog state={props.state} />
+            <MainDialog addUserDialog={props.addUserDialog}/>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import classes from './SideBar.module.css';
 import { Outlet, Link } from "react-router-dom";
 
-function SideBar(){
+let SideBar = () => {
     return(
             <div className={classes.SideBar}>
                 <div className={classes.item}>

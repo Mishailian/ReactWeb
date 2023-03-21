@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Header.module.css';
 
-function Header(){
+let Header = () => {
     return(
         <div className={classes.Header}></div>
     );
