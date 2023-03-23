@@ -8,8 +8,12 @@ let SendMesseg = (props) => {
     // props.addUserDialog(Text_input.current.value)
     
     let addUserDialog = () => {
-        let text = Text_input.current.value;
-        props.addUserDialog(text);
+
+        let text = {'user_name': Text_input.current.value};
+        props.dispatch({
+            'type': 'ADD-USER',
+            'user_name': text
+        });
     }
     
     return(

@@ -8,7 +8,7 @@ let Dialog = (props) => {
     return(
         <div className={`${classes.Dialog} MainPage`} >
             <ListOfDialog state={props.state} />
-            <MainDialog addUserDialog={props.addUserDialog}/>
+            <MainDialog dispatch={props.dispatch}/>
         </div>
     );
 }

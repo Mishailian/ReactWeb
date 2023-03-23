@@ -10,7 +10,7 @@ let  MainDialog = (props) => {
                 <Messeg msg='hello wrld'></Messeg>
             </div>
             
-            <SendMesseg addUserDialog={props.addUserDialog}/>
+            <SendMesseg dispatch={props.dispatch}/>
         </div>
     );
 }

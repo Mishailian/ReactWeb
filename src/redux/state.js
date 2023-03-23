@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 let store = {
     _state: {
@@ -13,37 +12,28 @@ let store = {
                 },
             },
     getState() {
-        return this.state
+
+        return this._state;
     },
-    renderEntireTree(){},
-};
+    _renderEntireTree(){
 
-// export let addUserDialog = (props) => {
-//     state.Dialog.ListOfDialogs.push({'user_name': props})
-//     renderEntireTree(state);
-// };
+    },
+    _refreshDom(func){
+        this._renderEntireTree = func;
+        console.log(this.renderEntireTree);
+    },
+    
 
-// export default state;
-=======
-import {renderEntireTree} from '../render';
-
-let state = {
-    'Dialog': {
-        'ListOfDialogs': [
-            {'user_name': 'Misha'},
-            {'user_name': 'Misha'},
-            {'user_name': 'Misha'},
-            {'user_name': 'Misha'},
-            ],
-        'MainDialog': [],
+    dispatch(action){
+        if( action.type === 'ADD-USER' ){
+            this._state.Dialog.ListOfDialogs.push(action.user_name);
+            console.log(this._renderEntireTree);
+            this._renderEntireTree(store);
+            console.log(store);
+        }
     },
 
-} 
 
-export let addUserDialog = (props) => {
-    state.Dialog.ListOfDialogs.push({'user_name': props})
-    renderEntireTree(state);
 };
 
-export default state;
->>>>>>> ca7ab3a2296723a2aa2a22f7bfeb0cd6724a4029
+export default store;

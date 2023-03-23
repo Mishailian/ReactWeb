@@ -1,27 +1,19 @@
-<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import state, {addUserDialog} from './redux/state';
+import store from './redux/state';
 
-export const renderEntireTree = (state) => { ReactDOM.createRoot(document.getElementById('root')).render(
+export const renderEntireTree = (store) => { 
+
+  ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App state={state} addUserDialog={addUserDialog}/>
+    <App state={store.getState()} dispatch={store.dispatch.bind(store)}/>
   </React.StrictMode>
-);
+  );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
 }
 
-renderEntireTree(state);
-=======
-import {renderEntireTree} from './render';
-import state from './redux/state';
+renderEntireTree(store);
 
-renderEntireTree(state);
->>>>>>> ca7ab3a2296723a2aa2a22f7bfeb0cd6724a4029
+store._refreshDom(renderEntireTree);
