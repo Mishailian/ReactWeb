@@ -5,10 +5,10 @@ import ListOfDialog from "./ListOfDialogs/ListOfDialog";
 import MainDialog from "./MainDialog/MainDialog";
 
 let Dialog = (props) => {
-    return(
+    return (
         <div className={`${classes.Dialog} MainPage`} >
             <ListOfDialog state={props.state} />
-            <MainDialog dispatch={props.dispatch}/>
+            <MainDialog dispatch={props.dispatch} />
         </div>
     );
 }

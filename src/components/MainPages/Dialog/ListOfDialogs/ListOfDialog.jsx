@@ -7,11 +7,11 @@ import DialogOfUser from "./DialogOfUser/DialogOfUser";
 
 
 let ListOfDialog = (props) => {
-    
-    let dialog_elements = props.state.Dialog.ListOfDialogs
-    .map(user => <DialogOfUser UserName={user.user_name}/>);
 
-    return(
+    let dialog_elements = props.state.Dialog.ListOfDialogs
+        .map(user => <DialogOfUser UserName={user.user_name} />);
+
+    return (
         <div className={classes.ListOfDialog}>
             {dialog_elements}
         </div>
