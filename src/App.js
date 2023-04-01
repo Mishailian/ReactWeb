@@ -14,7 +14,7 @@ let App = (props) => {
         <Header />
         <SideBar />
         <Routes>
-          <Route path='/' element={<Dialog />} />
+          <Route path='/' element={<Dialog state={props.state} />} />
           <Route path='/news' element={<News />} />
         </Routes>
       </div>

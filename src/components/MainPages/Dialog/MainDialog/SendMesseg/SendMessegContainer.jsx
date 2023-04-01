@@ -1,25 +1,24 @@
-import React from "react";
-import StoreContext from "../../../../../StoreContext";
 import SendMesseg from "./SendMesseg";
+import { connect } from "react-redux";
 
-let SendMessegContainer = (props) => {
+let mapDispatchToProps = (dispatch) => (
 
-    return (
-        <StoreContext.Consumer>
-            {(store) => {
-                let addMesseg = (text) => {
-                    store.dispatch({
-                        'type': 'Send-Messeg',
-                        'mes': { 'mes': text },
-                    });
-                }
+    {
+        addMesseg: (text) => {
+            dispatch(
+                {
+                    'type': 'Send-Messeg',
+                    'mes': { 'mes': text },
+                });
+        }
+    }
 
+);
 
-                return <SendMesseg addMesseg={addMesseg} />
-            }
-            }
-        </StoreContext.Consumer>
-    );
-}
+let mapStateToProps = (state) => {
+
+};
+
+const SendMessegContainer = connect(mapDispatchToProps, mapDispatchToProps)(SendMesseg);
 
 export default SendMessegContainer;

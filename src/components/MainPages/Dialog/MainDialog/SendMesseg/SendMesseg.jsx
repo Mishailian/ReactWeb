@@ -3,7 +3,6 @@ import classes from './SendMesseg.module.css';
 
 let SendMesseg = (props) => {
     let Text_input = React.createRef();
-
     let addMesseg = () => {
         props.addMesseg(Text_input.current.value)
     };

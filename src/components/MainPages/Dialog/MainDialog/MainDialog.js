@@ -4,8 +4,7 @@ import Messeg from "./Messeges/Messeg";
 import SendMessegContainer from "./SendMesseg/SendMessegContainer";
 
 let MainDialog = (props) => {
-
-    let meseges_list = props.state.SendMesseg.SendMesseg
+    let meseges_list = props.state.state.SendMesseg.SendMesseg
         .map(meseg => <Messeg mes={meseg.mes}></Messeg>);
 
     return (
@@ -20,3 +19,6 @@ let MainDialog = (props) => {
 }
 
 export default MainDialog;
+
+
+

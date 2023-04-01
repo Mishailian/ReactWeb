@@ -8,5 +8,6 @@ let redusers = combineReducers({
 });
 let store = createStore(redusers);
 
+window.focus(store)
 
 export default store;

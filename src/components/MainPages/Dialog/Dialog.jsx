@@ -8,7 +8,7 @@ let Dialog = (props) => {
     return (
         <div className={`${classes.Dialog} MainPage`} >
             <ListOfDialog />
-            <MainDialog />
+            <MainDialog state={props} />
         </div>
     );
 }
