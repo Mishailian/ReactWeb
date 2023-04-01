@@ -7,8 +7,8 @@ import MainDialog from "./MainDialog/MainDialog";
 let Dialog = (props) => {
     return (
         <div className={`${classes.Dialog} MainPage`} >
-            <ListOfDialog state={props.state} />
-            <MainDialog dispatch={props.dispatch} />
+            <ListOfDialog />
+            <MainDialog />
         </div>
     );
 }
